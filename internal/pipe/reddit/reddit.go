@@ -12,7 +12,7 @@ import (
 
 const (
 	defaultTitleTemplate = `{{ .ProjectName }} {{ .Tag }} is out!`
-	defaultURLTemplate   = `{{ trimsuffix .GitURL ".git" }}/releases/tag/{{ .Tag }}`
+	defaultURLTemplate   = `{{ .ReleaseURL }}`
 )
 
 type Pipe struct{}
